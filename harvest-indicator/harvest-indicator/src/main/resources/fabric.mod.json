@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "harvestindicator",
+  "version": "${version}",
+  "name": "Harvest Indicator",
+  "description": "Shows a floating '!' icon above crops that are ready to harvest.",
+  "authors": ["You"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/harvestindicator/icon.png",
+
+  "environment": "*",
+
+  "entrypoints": {
+    "main": [
+      "com.harvestindicator.HarvestIndicatorMod"
+    ],
+    "client": [
+      "com.harvestindicator.HarvestIndicatorClient"
+    ]
+  },
+
+  "mixins": [
+    "harvestindicator.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21"
+  }
+}
